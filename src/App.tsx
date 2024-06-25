@@ -1,5 +1,7 @@
+import Header from "./components/Layout/header";
+
 const App = () => {
-	return <p>Start</p>;
+	return <Header />;
 };
 
 export default App;

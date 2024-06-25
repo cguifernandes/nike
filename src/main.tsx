@@ -9,11 +9,7 @@ const init = () => {
 	document.body.appendChild(appContainer);
 	const root = createRoot(appContainer);
 	appContainer.id = "app";
-	root.render(
-		<>
-			<App />
-		</>,
-	);
+	root.render(<App />);
 };
 
 init();

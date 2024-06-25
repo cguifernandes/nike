@@ -98,5 +98,7 @@
 		},
 		"ignore": ["node_modules"]
 	},
-	"javascript": { "globals": ["document", "navigator", "window"] }
+	"javascript": {
+		"globals": ["document", "navigator", "window", "React", "ReactDOM"]
+	}
 }
