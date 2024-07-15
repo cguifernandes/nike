@@ -3,7 +3,7 @@ import Men from "../../assets/men.png";
 import Women from "../../assets/women.png";
 import Kids from "../../assets/kids.png";
 
-const Carousel = () => {
+const Product = () => {
 	return (
 		<div className="flex flex-col">
 			<div className="flex flex-col gap-y-5 items-center">
@@ -42,4 +42,4 @@ const Carousel = () => {
 	);
 };
 
-export default Carousel;
+export default Product;
