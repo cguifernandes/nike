@@ -20,7 +20,7 @@ input, textarea {
 
 .special-text {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-strokeWidth: 1.5px;
 }
 
 .linear-text {

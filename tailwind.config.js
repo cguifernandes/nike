@@ -9,6 +9,7 @@ export default {
 			},
 			colors: {
 				"gray-100": "#F8F8FC",
+				"gray-200": "#959799",
 				"dark-blue-200": "#0C315F",
 			},
 		},
