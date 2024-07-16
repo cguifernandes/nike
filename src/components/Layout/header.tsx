@@ -1,6 +1,6 @@
-import BagIcon from "../../assets/BagIcon";
+import BagIcon from "../../assets/icons/BagIcon";
 import Logo from "../../assets/Logo";
-import SearchIcon from "../../assets/SearchIcon";
+import SearchIcon from "../../assets/icons/SearchIcon";
 import NavLink from "../nav-link";
 
 const Header = () => {

@@ -5,7 +5,7 @@ import Kids from "../../assets/kids.png";
 
 const Product = () => {
 	return (
-		<div className="flex flex-col">
+		<section className="flex flex-col">
 			<div className="flex flex-col gap-y-5 items-center">
 				<h1 className="text-[56px] font-bold font-poppins">Just do it</h1>
 				<span className="text-gray-200 text-lg font-normal font-poppins">
@@ -38,7 +38,7 @@ const Product = () => {
 					</span>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

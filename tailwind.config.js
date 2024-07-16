@@ -10,7 +10,12 @@ export default {
 			colors: {
 				"gray-100": "#F8F8FC",
 				"gray-200": "#959799",
+				"gray-300": "#77787B",
 				"dark-blue-200": "#0C315F",
+			},
+			backgroundImage: {
+				"gradient-to-transparent":
+					"linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%)",
 			},
 		},
 	},
