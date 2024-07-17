@@ -76,6 +76,11 @@ const Popular = () => {
 					onSwiper={(swiper) => setSwiperRef(swiper)}
 					modules={[Navigation]}
 					autoplay
+					spaceBetween={24}
+					navigation={{
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					}}
 					breakpoints={{
 						768: {
 							slidesPerView: 2,
@@ -87,12 +92,6 @@ const Popular = () => {
 							slidesPerView: 4,
 						},
 					}}
-					spaceBetween={24}
-					navigation={{
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev",
-					}}
-					slidesPerView={3}
 				>
 					{sliderElements.map((el, index) => (
 						<SwiperSlide className="rounded-lg" key={index}>

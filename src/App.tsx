@@ -1,8 +1,9 @@
-import Product from "./components/Layout/product";
+import Product from "./components/Sections/product";
 import Header from "./components/Layout/header";
 import HeroBanner from "./components/Layout/hero-banner";
-import Featured from "./components/Layout/featured";
-import Popular from "./components/Layout/popular";
+import Featured from "./components/Sections/featured";
+import Popular from "./components/Sections/popular";
+import Promo from "./components/Sections/promo";
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 				<Product />
 				<Featured />
 				<Popular />
+				<Promo />
 			</main>
 		</>
 	);
