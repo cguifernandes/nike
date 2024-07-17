@@ -2,6 +2,7 @@ import Product from "./components/Layout/product";
 import Header from "./components/Layout/header";
 import HeroBanner from "./components/Layout/hero-banner";
 import Featured from "./components/Layout/featured";
+import Popular from "./components/Layout/popular";
 
 const App = () => {
 	return (
@@ -11,6 +12,7 @@ const App = () => {
 				<HeroBanner />
 				<Product />
 				<Featured />
+				<Popular />
 			</main>
 		</>
 	);
