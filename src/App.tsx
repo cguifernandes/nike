@@ -4,6 +4,7 @@ import HeroBanner from "./components/Layout/hero-banner";
 import Featured from "./components/Sections/featured";
 import Popular from "./components/Sections/popular";
 import Promo from "./components/Sections/promo";
+import Footer from "./components/Layout/footer";
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 				<Featured />
 				<Popular />
 				<Promo />
+				<Footer />
 			</main>
 		</>
 	);
