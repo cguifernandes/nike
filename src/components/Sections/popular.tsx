@@ -8,30 +8,44 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Popular = () => {
 	const [swiperRef, setSwiperRef] = useState<SwiperClass | null>(null);
 	const [sliderIndex, setSliderIndex] = useState(0);
+
 	const sliderElements = [
-		<img
+		<motion.img
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ type: "keyframes" }}
 			key={1}
 			src={Popular1}
 			className="w-[400px] rounded-lg h-[536px]"
 			alt="Imagem popular section"
 		/>,
-		<img
+		<motion.img
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ type: "keyframes", delay: 0.2 }}
 			key={2}
 			src={Popular2}
 			className="w-[400px] rounded-lg h-[536px]"
 			alt="Imagem popular section"
 		/>,
-		<img
+		<motion.img
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ type: "keyframes", delay: 0.4 }}
 			key={3}
 			src={Popular3}
 			className="w-[400px] rounded-lg h-[536px]"
 			alt="Imagem popular section"
 		/>,
-		<img
+		<motion.img
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ type: "keyframes" }}
 			key={4}
 			src={Popular4}
 			className="w-[400px] rounded-lg h-[536px]"
@@ -39,20 +53,30 @@ const Popular = () => {
 		/>,
 	];
 
-	swiperRef?.on("slideChange", (ctx) => {
-		setSliderIndex(ctx.activeIndex);
-	});
+	const handleSlideChange = (swiper: SwiperClass) => {
+		setSliderIndex(swiper.activeIndex);
+	};
 
 	return (
 		<section className="flex flex-col px-20">
 			<div className="flex justify-between items-end">
-				<div className="flex flex-col gap-y-5">
+				<motion.div
+					initial={{ translateX: -40, opacity: 0 }}
+					whileInView={{ translateX: 0, opacity: 1 }}
+					transition={{ type: "keyframes" }}
+					className="flex flex-col gap-y-5"
+				>
 					<h1 className="text-[56px] font-bold font-poppins">Popular Picks</h1>
 					<span className="text-gray-200 text-lg font-normal font-poppins">
 						Our popular picks for most favorited Nike Men’s & Women’s shoes.
 					</span>
-				</div>
-				<div className="gap-x-2 flex items-center">
+				</motion.div>
+				<motion.div
+					initial={{ translateX: 40, opacity: 0 }}
+					whileInView={{ translateX: 0, opacity: 1 }}
+					transition={{ type: "keyframes" }}
+					className="gap-x-2 flex items-center"
+				>
 					<button
 						type="button"
 						disabled={sliderIndex === 0}
@@ -69,11 +93,12 @@ const Popular = () => {
 					>
 						<ArrowIcon className="-rotate-180 size-5" />
 					</button>
-				</div>
+				</motion.div>
 			</div>
 			<div className="my-16">
 				<Swiper
-					onSwiper={(swiper) => setSwiperRef(swiper)}
+					onSwiper={setSwiperRef}
+					onSlideChange={handleSlideChange}
 					modules={[Navigation]}
 					autoplay
 					spaceBetween={24}
@@ -81,20 +106,13 @@ const Popular = () => {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
 					}}
-					breakpoints={{
-						768: {
-							slidesPerView: 2,
-						},
-						1280: {
-							slidesPerView: 3,
-						},
-						1536: {
-							slidesPerView: 4,
-						},
-					}}
+					slidesPerView={3}
 				>
-					{sliderElements.map((el, index) => (
-						<SwiperSlide className="rounded-lg" key={index}>
+					{sliderElements.map((el, key) => (
+						<SwiperSlide
+							key={key}
+							className="rounded-lg !overflow-visible !flex justify-center relative"
+						>
 							{el}
 						</SwiperSlide>
 					))}
