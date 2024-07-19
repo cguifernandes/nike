@@ -8,6 +8,7 @@ const HeroBanner = () => {
 				<motion.span
 					initial={{ translateY: -40, opacity: 0 }}
 					whileInView={{ translateY: 0, opacity: 1 }}
+					viewport={{ once: true }}
 					transition={{
 						type: "keyframes",
 						duration: 0.4,
@@ -19,6 +20,7 @@ const HeroBanner = () => {
 				<motion.span
 					initial={{ translateY: -40, opacity: 0 }}
 					whileInView={{ translateY: 0, opacity: 1 }}
+					viewport={{ once: true }}
 					transition={{
 						type: "keyframes",
 						delay: 0.2,
@@ -32,6 +34,7 @@ const HeroBanner = () => {
 			<motion.img
 				initial={{ opacity: 0, top: 120 }}
 				whileInView={{ opacity: 1, top: 190 }}
+				viewport={{ once: true }}
 				transition={{
 					type: "keyframes",
 					delay: 0.6,

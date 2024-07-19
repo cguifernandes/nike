@@ -3,7 +3,6 @@ import Men from "../../assets/men.png";
 import Women from "../../assets/women.png";
 import Kids from "../../assets/kids.png";
 import { motion } from "framer-motion";
-import ProductItem from "../item-product";
 
 const Product = () => {
 	return (
@@ -20,10 +19,50 @@ const Product = () => {
 				</span>
 			</motion.div>
 			<div className="flex justify-center gap-x-6 my-16">
-				<ProductItem src={NewComer} text="Newcomer" />
-				<ProductItem src={Men} text="Men" />
-				<ProductItem src={Women} text="Women" />
-				<ProductItem src={Kids} text="Kids" />
+				<motion.div
+					initial={{ translateY: -40, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "keyframes" }}
+					className="flex items-center relative justify-center w-[294px] h-[386px]"
+				>
+					<img src={NewComer} alt="New Comer" />
+					<motion.span className="font-satoshi pointer-events-none font-medium absolute text-[40px] leading-[54px] text-white">
+						Newcomer
+					</motion.span>
+				</motion.div>
+				<motion.div
+					initial={{ translateY: -40, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "keyframes", delay: 0.2 }}
+					className="flex items-center relative justify-center w-[294px] h-[386px]"
+				>
+					<img src={Men} alt="New Comer" />
+					<motion.span className="font-satoshi pointer-events-none font-medium absolute text-[40px] leading-[54px] text-white">
+						Men
+					</motion.span>
+				</motion.div>
+				<motion.div
+					initial={{ translateY: -40, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "keyframes", delay: 0.4 }}
+					className="flex items-center relative justify-center w-[294px] h-[386px]"
+				>
+					<img src={Women} alt="New Comer" />
+					<motion.span className="font-satoshi pointer-events-none font-medium absolute text-[40px] leading-[54px] text-white">
+						Women
+					</motion.span>
+				</motion.div>
+				<motion.div
+					initial={{ translateY: -40, opacity: 0 }}
+					whileInView={{ translateY: 0, opacity: 1 }}
+					transition={{ type: "keyframes", delay: 0.6 }}
+					className="flex items-center relative justify-center w-[294px] h-[386px]"
+				>
+					<img src={Kids} alt="New Comer" />
+					<motion.span className="font-satoshi pointer-events-none font-medium absolute text-[40px] leading-[54px] text-white">
+						Kids
+					</motion.span>
+				</motion.div>
 			</div>
 		</section>
 	);
