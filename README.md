@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+<h1 align="center">Nike Landing Page</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/77393da3-cf28-4cb7-82c3-ce5f10bab717" width="850px"/>
+</div>
 
-Currently, two official plugins are available:
+## Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Landing page simplificada inspirada no site da Nike, projetada para testar e aprimorar habilidades com a biblioteca Framer Motion, explorando técnicas avançadas de animação e transições para uma experiência visual dinâmica. Aqui veja o link do <a href="https://www.figma.com/@irawan">autor do Figma</a> ou link do <a href="https://www.figma.com/file/dKRjB9bKCYlkFbDQ367g12/Nike-Website-Redesign-(Community)?type=design&node-id=1-2&t=UekFqrZ5uwHNfMMO-0">projeto no Figma</a>
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [TailwindCSS](https://tailwindcss.com/)
 
-- Configure the top-level `parserOptions` property like this:
+- [React.JS](https://react.dev/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- [TypeScript](https://www.typescriptlang.org/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Framer Motion](https://www.framer.com/motion/)
+
+## Instruções de Uso
+
+1. Comece clonando o repositório do projeto para sua máquina local. Você pode fazer isso usando o comando git clone seguido pelo URL do repositório.
+
+2. Acesse o diretório do projeto clonado e execute o comando <strong>npm install</strong> ou <strong>yarn install</strong> para instalar todas as dependências necessárias do projeto. Certifique-se de ter o Node.js e o npm (ou yarn) instalados em seu sistema.
+
+3. Após a instalação das dependências, execute o comando <strong>npm run dev</strong> ou <strong>yarn dev</strong> no terminal dentro do diretório do projeto. O projeto será iniciado no endereço http://localhost:3000 (a menos que outro endereço seja especificado). Abra o navegador e acesse esse endereço para visualizar o projeto em execução.
+
+## Autor
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/cguifernandes">
+        <img src="https://avatars.githubusercontent.com/u/88489337?s=400&u=a2bec996eaf90a1f34fc0ab909f54df0ab065659&v=4" width="100px;" alt="Minha foto no GitHub"/><br>
+        <sub>
+          <b>Guilherme Fernandes</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
